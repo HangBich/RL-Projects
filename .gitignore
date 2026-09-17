@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Môi trường ảo
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Dữ liệu và kết quả nặng
+*.pth
+*.ckpt
+wandb/
+runs/
