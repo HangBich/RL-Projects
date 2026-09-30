@@ -28,13 +28,3 @@ class GridWorld:
             done = True 
         self.current = next_state
         return next_state, reward, done 
-
-
-env = GridWorld()
-env.reset()
-env.step(1)
-env.step(2)
-s = env.reset()
-s2, r, done = env.step(2)
-# s2 phải là [0,1], không phải [1,2]
-print(s2, r, done)
