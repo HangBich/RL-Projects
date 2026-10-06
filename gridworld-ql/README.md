@@ -26,7 +26,7 @@ Tabular Q-learning implemented from scratch (no RL libraries).
 ```bash
 pip install -r requirements.txt
 python train.py
-pytest test_environment.py
+pytest test_env.py
 ```
 
 ## Results
