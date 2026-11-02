@@ -32,11 +32,3 @@ class Buffer:
             torch.FloatTensor(self.next_state[ind]),
             torch.FloatTensor(self.done[ind]),
             )
-
-if __name__ == "__main__":
-    buf = Buffer(state_dim=3, action_dim=1, max_size=50)
-    for i in range(100):
-        buf.add([i, i, i], [i], i, [i+1, i+1, i+1], 0)
-    print(buf.size, buf.ptr)          # kỳ vọng: 50 0
-    s, a, r, ns, d = buf.sample(32)
-    print(s.shape, a.shape, r.shape)  # kỳ vọng: [32,3] [32,1] [32,1]
